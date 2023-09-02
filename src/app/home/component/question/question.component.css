@@ -1,0 +1,42 @@
+.main-class{
+    width: 50%;
+    border: 5px solid var(--main-color);
+    margin:50px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+.sub-class{
+    width: 100%;
+    padding: 30px;
+    border: 1px solid var(--second-blue);
+    margin: 25px auto;
+    border-radius: 10px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    display:flex;
+    justify-content: space-between;
+}
+.icon span{
+    margin-left: 15px;
+}
+.icon img:nth-child(1){
+    margin-right: 30px;
+}
+.icon img{
+    width: 30px;
+    
+}
+.submit button{
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid var(--main-color);
+}
+input[ type="radio"]{
+    margin-left: 20px;
+}

@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+
+<div class="container">
+    <div class="slider-home">
+        <app-carousel></app-carousel>
+    </div>
+    <div class="parent-two-button">
+        <button class="exams" [routerLink]="['/courses']">الدورات </button>
+        <button class="question-bank" [routerLink]="['/question']">بنك الاسئلة </button>
+    </div>
+
+    <div class="title-category">
+        <h1> التصنيفات</h1>
+
+    </div>
+    <div class="section-grid-category" >
+        <div class="name-category" *ngFor="let p of nameCategory" 
+        (click)="sendData(p.id) " [routerLink]="['/specialcourse']"
+        >{{p.specialization_name}}</div>
+
+    </div>
+</div>
+<app-footer></app-footer>
+
+

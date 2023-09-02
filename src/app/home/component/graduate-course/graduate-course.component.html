@@ -1,0 +1,20 @@
+
+<app-header></app-header>
+
+<div class="butto-back" (click)="goBack()">
+    <i ><img src="../../../../assets/images/bxs-right-arrow-alt.svg" alt=""></i>
+    <div>العودة</div>
+</div>
+         
+    <div class="main" >    
+    <div class="sub-main"  *ngFor="let item of oldexames;index as i from 2"
+       
+        [ngClass]="(i%2===0) ?'vector-container':'vector-group'"  > 
+      
+        <img class="vector-icon" alt="" src="../../../../assets/web/web/ic_book.svg">
+        
+        <div class="div3"> {{item.term_name}}</div>
+        <img class="vector-icon1" alt="" src="../../../../assets/web/web/left-arrow.svg">
+        
+    </div>
+    </div>

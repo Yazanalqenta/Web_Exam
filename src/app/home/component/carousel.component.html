@@ -1,0 +1,11 @@
+<div *ngIf="images && images.length >0" class="carsoul-container">
+    <img *ngFor="let image of images;let i=index"
+     [src]="image.image" [alt]=""
+     [ngClass]="{'image-active':selectedindex===i}">
+
+<div *ngIf="indecorators" class="carsoul-dot-container">
+<span *ngFor="let dots of images;let i=index" class="dot"
+[ngClass]="{'active':selectedindex===i}"
+(click)="selectimage(i)"></span>
+</div>
+</div>

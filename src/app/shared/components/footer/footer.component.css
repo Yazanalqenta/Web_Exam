@@ -1,0 +1,58 @@
+.parent-footer{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+   
+}
+.parent-footer svg{
+    position: absolute;
+    z-index: -10;
+    stroke: none; fill: var(--second-blue);
+    height: 200px; 
+    width: 100%;
+ 
+}
+.parent-footer-contain{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+}
+
+.logo-footer img{
+    margin-top: 30px;
+    width: 170px;
+    height: 80px;
+
+}
+
+.list-footer{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+/* .over-section{
+    position: absolute;
+    bottom: 0;
+
+} */
+.list-footer-under{
+    display: flex;
+   
+    gap: 30px;
+}
+.icon-item img{
+    width: 20px;
+    height: 20px;
+   
+}

@@ -1,0 +1,93 @@
+.vector-icon {
+    position: relative;
+    width: 30px;
+    
+}
+.vector-icon1 {
+    position: relative;
+    width: 26.5px;
+    height: 25.17px;
+}
+ 
+.vector-group {
+    
+    top: 651px;
+    left: calc(50% - 599px);
+    border-radius: 5px;
+    background-color: rgba(111, 40, 119, 0.25);
+    width: 1197px;
+    height: 82px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content:space-between;
+    gap: 10px;
+}
+.vector-container {
+  
+    top: 508px;
+    left: calc(50% - 599px);
+    border-radius: 5px;
+    background-color: rgba(185, 229, 251, 0.5);
+    width: 1197px;
+    height: 82px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+ 
+ 
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding: 10px;
+    margin-top: 50px;
+}
+.butto-back{
+    cursor: pointer;
+}
+
+.butto-back{
+    width: 200px;
+    height: 20px;
+    /* background-color: blue; */
+    margin-top: 50px;
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+    font-size: 2rem;
+   
+}
+.butto-back img{
+    width: 50px;
+}
+i{
+    animation-name:left-right ;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+     
+}
+@keyframes left-right{
+    0%{
+transform: translateX(3px);
+    }
+    50%{
+        transform: translatex(6px);
+    }
+    75%{
+        transform: translatex(-6px);
+    }
+    100%{
+        transform: translatex(-3px);
+    }
+}

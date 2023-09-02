@@ -1,0 +1,50 @@
+<div class="main">
+    <app-header></app-header>
+    <div class="section1">
+        <div class="card ">
+            <h3>طريقك الأسهل لاجتياز الفحص الوطني الموحد</h3>
+            <p>أصبح بامكانك الحصول على أسئلة الامتحان الوطني الموحد بكل سهولة من مكان واحد فقط "اطلع" ابدأ الان </p>
+            <button>ابدأ الان</button>
+        </div>
+        <div class="slider">
+          <app-carousel></app-carousel>  
+        </div>
+    </div>
+    <div class="section2">
+        <div class="sec1">
+            <h2>الاختصاصات</h2>
+        </div>
+        <div class="container sec2">
+            <div class="sec" *ngFor="let item of section" (click)="selected=true">
+                 <img src="{{item.image}}" alt=""> 
+                <H4 class="sec5" >{{item.collage_name}}</H4>
+
+            </div>
+        </div>
+    </div>
+    <div class="sec-button" *ngIf="selected===true">
+        <button class="master" [routerLink]="['/master']">ماستر</button>
+        <button class="gradute" [routerLink]="['/graduate']" >تخرج</button>
+    </div>
+    <div class="section3">
+        <div class="right">
+            <div class="image">
+                <img src="../../../../assets/images/photo_2023-08-15_13-09-35.jpg" alt="">
+            </div>
+        </div>
+        <div class="left">
+
+            <div class="container1">
+                <p>يمكنك تنزيل التطبيق واستخدامه أينما كنت متوفر على أنظمة الأندرويد والأيفون</p>
+            </div>
+            <div class="button">
+                <img src="../../../../assets/images/app-store-b7b142a8.png" alt="">
+                <img src="../../../../assets/images/OIP.jpeg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,150 @@
+
+.section1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.slider{
+width: 30%;
+}
+
+
+.card{
+    width: 30%;
+/* display: flex;
+flex-direction: column;
+justify-content: space-between; */
+}
+.card h3{
+    margin: 40px 15px;
+    
+}
+.card p{
+    margin: 10px 10px  30px;
+    
+}
+.card button{
+    height: 50px;
+    margin: 30px 10px; 
+    background-color: #6F2877;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.section2{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:40px auto;
+}
+.sec1 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2{
+    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+    
+
+}
+.sec{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec img{
+    width: 100px;
+}
+.sec5{
+    cursor: pointer;
+}
+.sec5:hover{
+    text-decoration: underline;
+}
+
+.sec:nth-child(5)
+ {
+  grid-column: span 2; /* تمتد عبر عمودين */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.sec:nth-child(6) {
+  grid-column: span 2; /* تمتد عبر عمودين */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+}
+.sec-button{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.master,.gradute{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold; 
+    width: 200px;
+}
+.master{
+    background-color: var(--main-color);
+}
+.gradute{
+    background-color: var(--blue-color);
+}
+.section3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 242, 250);
+    height: 250px;
+    margin-top: 300px;
+    margin-bottom: 150px;
+}
+.right{
+    position: relative;
+    width: 50%;
+}
+.left{
+    width: 50%;
+
+}
+
+.container1{
+width: 50%;
+}
+.left p{
+   
+    font-size: 20px;
+    font-weight: bold;
+}
+.image img{
+    width: 600px;
+    position: absolute;
+    top: -300px;
+    left: 50px;
+}
+
+.button{
+    display: flex;
+    gap: 20px;
+}
+.button img{
+    width: 200px;
+}
+

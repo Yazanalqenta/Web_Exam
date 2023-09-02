@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class="container">
+    <div class="butto-back" (click)="goBack()">
+        <i ><img src="../../../../assets/images/bxs-right-arrow-alt.svg" alt=""></i>
+        <div >العودة</div>
+    </div>
+
+    <div class="title-exam-parent">
+        <h1>{{ titleName}}</h1>
+
+        <ul class="list-mark">
+            <li>{{mark}} سؤال</li>
+            <li>علامة النجاح {{mark}}</li>
+        </ul>
+
+
+    </div>
+    <div class="important-istruction">
+        <h1>تعليمات هامة </h1>
+    </div>
+    <ul class="list-instruction">
+        <li>ابدأ الاختبار سوف ينقلك الى صفحة السؤال </li>
+        <li>للتحقق من صحة إجابتك اضغط على اشارة الصح أسفل السؤال سوف تظهر لك الإجابة صحيحة أو خاطئة</li>
+        <li>إشارة الكتاب سوف تظهر لك مرجع السؤال </li>
+        <li>كما يمكنك الحصول على التيجة في آخر الاختبار .... بالتوفيق </li>
+    </ul>
+    <div class="section-button-start" >
+        <button class="start-exam-buttom" (click)="start=true">
+            ابدأ الاختبار
+        </button>
+    </div>
+    
+       <div class="container" *ngIf="start">
+        <app-question></app-question>
+       </div>
+   

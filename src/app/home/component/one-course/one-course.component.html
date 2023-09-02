@@ -1,0 +1,79 @@
+<div class="main-class">
+    <form  *ngIf="currentQuestion >= 0 && currentQuestion<questions.length"(ngSubmit)="submitQuiz()">
+       <h2>{{id}}-{{ questions[currentQuestion].questionText}}</h2>
+      <ul>
+        <li *ngFor="let answer of questions[currentQuestion].options" class="sub-class">
+            <label >
+              <input type="radio" name="answer" [(ngModel)]="selectedAnswer" [value]="answer">
+              {{ answer.text }}
+            </label>
+          </li> 
+     
+      </ul>
+      <div class="bottom">
+        <div class="icon">
+          <div class="submit">
+          <button type="button" (click)="beforeQuestion()">السابق</button>
+          </div>
+          <span><img src="../../../../assets/web/web/ic_answer_correct.svg" alt=""
+           ></span>
+          <span><img src="../../../../assets/web/web/ic_star_empty.svg" 
+            
+            alt=""></span>
+          
+          <span><img src="../../../../assets/web/web/ic_book.svg" alt=""></span>
+          </div>
+          <div class="submit">
+            <button type="button" (click)="nextQuestion();">التالي</button>
+      </div>
+      </div>
+      <!-- <div *ngIf="currentQuestion === questions.length">
+        <h2>تم الانتهاء من الاختبار!</h2>
+        <p>شكرًا لك على إكمال الاختبار.</p>
+        <button type="submit">إرسال</button>
+      </div>  -->
+    </form>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- <form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+      <div *ngFor="let question of data1" class="main-class">
+        <h3>{{ question.questionText }}</h3>
+        <div *ngFor="let answer of question.options" class="sub-class">
+          <label>
+            <input type="radio" [value]="answer" formControlName="answer" 
+            name="question{{ question.id }}" [(ngModel)]="selectedAnswers[question.id]"   >
+            {{ answer.text }}
+          </label>
+        </div>
+        <div class="bottom">
+          <div class="icon">
+            <span><img src="../../../../assets/web/web/ic_answer_correct.svg" alt=""></span>
+            <span><img src="../../../../assets/web/web/ic_star_empty.svg" alt=""></span>
+            
+            <span><img src="../../../../assets/web/web/ic_book.svg" alt=""></span>
+            
+                  </div>
+          <div class="submit">
+            <button type="submit" (click)="nextQuestion()">التالي</button>
+          </div>
+          <div *ngIf="showResult">
+            <h3>نتيجتك</h3>
+            <p>عدد الإجابات الصحيحة: {{ correctAnswersCount }}</p>
+            <p>عدد الإجابات الخاطئة: {{ wrongAnswersCount }}</p>
+          </div>
+        </div>
+      </div>
+      
+    </form> -->

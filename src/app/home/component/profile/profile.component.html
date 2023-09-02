@@ -1,0 +1,48 @@
+<div class="parrent-div">
+    <!-- <div class="photo-div"> -->
+  
+  
+    <!-- <img mat-card-image src="../../../../assets/images/Login.svg" alt="Photo" class="img1"> -->
+  
+  
+    <!-- <img mat-card-image src="../../src/assets/images/Login.svg"> -->
+    <!-- </div> -->
+  
+  
+    <div class="border-div">
+      <mat-card class="card1">
+        <mat-toolbar class="login-bar">تعديل المعلومات الشخصية</mat-toolbar>
+  
+        
+          <div class="avatar-user-100">
+            <label for="ubload"><img mat-card-image src="../../../../assets/images/photo_2023-08-20_00-36-41.jpg" alt="Photo"
+                class="img2"></label>
+            <input type="file" id="ubload">
+            <p class="p1">اسم المستخدم</p>
+          </div>
+          
+  
+        
+        <form class="login-form" >
+  
+  
+          <mat-label>اسم المستخدم</mat-label>
+  
+          <mat-form-field>
+  
+            <input matInput placeholder="اسم المستخدم" formControlName="name" class="i1">
+          </mat-form-field>
+  
+          <mat-label>رقم الموبايل</mat-label>
+          <mat-form-field>
+  
+            <input matInput type="number" placeholder="رقم الموبايل" formControlName="codenumber" class="i1">
+          </mat-form-field>
+          <button mat-raised-button type="submit" [style.backgroundColor]="'#6F2877'" class="but-input">حفظ
+            التغييرات</button>
+        </form>
+        <button mat-button type="submit"><a href="http://">إلغاء</a></button>
+  
+      </mat-card>
+    </div>
+  </div>

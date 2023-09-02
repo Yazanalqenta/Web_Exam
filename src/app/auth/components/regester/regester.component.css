@@ -1,0 +1,117 @@
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    display: flex;
+   
+}
+.photo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.login{
+    flex: 1;
+      background-color: #6F2877; 
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+    
+}
+
+  
+.title{
+   margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.form1{
+    width: 80%;
+    height: 80%;
+    background-color:#FFFFFF ;
+    border-radius: 10px;
+    border: 4px dashed #6F2877;
+    border-spacing :40px;
+    /* border: 3px  dashed #6F2877 ;
+    border-width: 4px; */
+   
+}
+label{
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+mat-form-field,label{
+   
+    width: 80%;
+    margin: auto;
+}
+
+button{
+    width: 80%;
+    margin:50px auto;
+    background-color: #6F2877;
+}
+
+mat-radio-group{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+
+} 
+/* mat-radio-button{
+    border-radius: 0;
+  } */
+ 
+  span.login1{
+    cursor: pointer;
+    color: rgb(22, 22, 236);
+} 
+span.login1:hover{
+    color:rgb(9, 9, 117) ;
+}
+.bottom{
+    width: 200px;
+margin:0 auto;
+}
+:host ::ng-deep .mat-radio-outer-circle{
+    border-radius:2px;
+  }
+  :host ::ng-deep .mat-radio-inner-circle{
+      border-radius:2px;
+      background-color: transparent!important;
+      border-bottom: 4px solid white;
+      border-right:4px solid white;
+      height:30px;  
+      width:15px;
+      margin-top: -8px;
+     margin-left: 3px;
+  }
+  :host ::ng-deep .mat-radio-checked .mat-radio-outer-circle{
+     background:#ff4081!important;
+  }
+  :host ::ng-deep .mat-radio-checked .mat-radio-inner-circle{
+     transform: rotate(45deg) scale(0.5);
+  }
+
+  :host ::ng-deep .mat-radio-button .mat-radio-ripple{
+    height: 20px; /*double of your required circle radius*/
+    width: 20px;  /*double of your required circle radius*/
+    left: calc(50% - 10px); /*'10px'-same as your required circle radius*/
+    top: calc(50% - 10px); /*'10px'-same as your required circle radius */
+  }
+
+
+  
+  

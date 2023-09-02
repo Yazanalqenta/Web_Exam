@@ -1,0 +1,34 @@
+
+<app-header></app-header>
+<div class="container">
+    <div class="butto-back" (click)="goBack()">
+       <i> <img src="../../../../assets/images/bxs-right-arrow-alt.svg"></i>
+        
+        <div>العودة</div>
+
+    </div>
+
+    <div class="title-exam-parent">
+        <div class="title-mark">
+            <h1 style="font-size: 2rem;">مبروك لقد أتممت الاختبار بنجاح </h1>
+        </div>
+        <div class="mark-svg">
+            <div class="mark-text" *ngFor="let m of mark">
+                <h1 style="font-size: 2rem;">علامتك هي : {{m.Your_Mark_Is}}</h1>
+            </div>
+            <div class="svg-mark">
+                <img src="../../../../assets/web/web/Imagecup.svg">
+            </div>
+        </div>
+    </div>
+    <div class="list-number-quest">
+        <ul class="list-quest-item" *ngFor="let m of mark">
+            <li> {{m.Count_Of_Correct_Answers}}:عدد الاسئلة الصحيحة </li>
+            <li> {{50 - m.Count_Of_Correct_Answers}}:عدد الاسئلة الخاطئة </li>
+        </ul>
+    </div>
+
+    <div class="button-check">
+        <button>التحقق من الإجابات </button>
+    </div>
+</div>

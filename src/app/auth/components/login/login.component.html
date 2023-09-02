@@ -1,0 +1,33 @@
+<div class="parrent-div">
+ 
+      
+  <div   class="main-div" >
+    <div class="border-div"  >
+    <mat-card  class="card1">
+      <mat-toolbar   class="login-bar"  >تسجيل الدخول</mat-toolbar>
+      <form   class="login-form" [formGroup]="formUser" (ngSubmit)="sendmodel()">
+        <mat-label >اسم المستخدم</mat-label>
+        <mat-form-field >
+          
+          <mat-icon matPrefix><span class="material-icons-outlined">
+            perm_identity
+            </span></mat-icon>
+          <input matInput  placeholder="اسم المستخدم" formControlName="name">
+        </mat-form-field>
+        <mat-label >رمز المرور</mat-label>
+        <mat-form-field >
+          <mat-icon matPrefix>home</mat-icon> 
+          <input matInput type="text" placeholder="رمز المرور"  formControlName="codenumber">
+        </mat-form-field>
+        <button   mat-raised-button type="submit"[style.backgroundColor]="'#6F2877'"  class="but-input">تسجيل الدخول </button>
+      </form>
+      <button mat-button type="submit"> ليس لديك حساب؟ <span class="register1" [routerLink]="['/register']" >أنشئ حساب</span></button>
+      
+    </mat-card>
+  </div>
+  </div>
+  <div class="photo-div">
+    <img mat-card-image src="../../../../assets/images/Login.svg" alt="Photo" class="img1">
+   </div>
+  
+  </div>

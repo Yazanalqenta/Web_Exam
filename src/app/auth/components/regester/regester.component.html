@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="box">
+   
+
+    <div class="login">
+      <div class="form1">
+        <div class="title" dir="rtl">
+          <p>انشاء حساب</p>
+
+        </div>
+
+        <form [formGroup]="formUser" (ngSubmit)="onsubmit()">
+          <label>اسم المستخدم</label>
+          <mat-form-field appearance="outline" color="primary">
+            <mat-icon matPrefix><span class="material-icons-outlined">
+              perm_identity
+              </span></mat-icon>
+            <input matInput placeholder="اسم المستخدم" formControlName="name">
+
+          </mat-form-field>
+          <label for="">رقم الموبايل</label>
+          <mat-form-field appearance="outline" color="primary">
+            <mat-icon matPrefix><span class="material-icons-outlined">
+              wifi_calling_3
+              </span></mat-icon>
+            <input matInput placeholder="رقم الموبايل"  formControlName="number">
+          </mat-form-field>
+          <label for="">اختر الاختصاص</label>
+
+          <mat-radio-group class="smallRadio" formControlName="spec">
+            <mat-radio-button  name= "spec" value="{{option.id}}" *ngFor="let option of specializations">
+              {{ option.collage_name }}
+            </mat-radio-button>
+          </mat-radio-group>
+
+
+          <button mat-button type="submit">انشاء حساب</button>
+        </form>
+        <div class="bottom">
+          <p >لديك حساب؟ <span class="login1" [routerLink]="['/login']">تسجيل الدخول</span> </p>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="photo">
+
+      <img mat-card-image src="../../../../assets/images/signup.svg" alt="Image Description"
+        style="width:90%;height:700px;">
+    </div>
+
+  </div>
+
+</div>
